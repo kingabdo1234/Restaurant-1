@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVOR — Premium Contemporary Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="portfolio-banner" role="status">
+        Portfolio Demonstration Concept — Designed for Web Showcase Only.
+    </aside>
+
+    <div class="announcement-bar">
+        <span>Discover our seasonal autumn menu — crafted fresh every single day.</span>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo">SAVOR</a>
+            
+            <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#reservation" class="nav-link">Reservations</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-trigger" id="cart-toggle-btn" aria-label="View Order Summary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+                <a href="#reservation" class="btn btn-primary btn-sm hide-mobile">Book a Table</a>
+                <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge">Contemporary Fine Dining</span>
+                    <h1 class="hero-title">Culinary Artistry Redefined for the Modern Palate.</h1>
+                    <p class="hero-description">Experience handcrafted meals using locally-sourced organic ingredients, prepared with passion and served in an elegant ambiance.</p>
+                    <div class="hero-cta">
+                        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                        <a href="#reservation" class="btn btn-secondary">Reserve a Table</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=1000" alt="Exquisite gourmet steak dish plated with culinary elegance" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-padding" id="about">
+            <div class="container grid grid-2">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=1000" alt="Warm interior dining area of SAVOR restaurant" class="rounded-img">
+                </div>
+                <div class="about-content">
+                    <span class="subheading">Our Passion</span>
+                    <h2>Food Made with Uncompromising Passion</h2>
+                    <p>Founded with a vision to marry traditional culinary roots with modern presentation, SAVOR offers an unforgettable sensory journey. Every ingredient is hand-selected from artisanal local producers.</p>
+                    <p>Whether celebrating a milestone or enjoying a quiet evening, our team ensures an authentic, luxurious dining experience from the first sip to the final dish.</p>
+                    <a href="#menu" class="btn btn-outline mt-4">Discover Our Offerings</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Chef's Selections</span>
+                    <h2>Featured Recommendations</h2>
+                    <p>A curated glance at our guest favorites and seasonal specialties.</p>
+                </div>
+                <div class="grid grid-3" id="featured-dishes-grid">
+                </div>
+            </div>
+        </section>
+
+        <section class="offer-banner section-padding text-light">
+            <div class="container grid grid-2 items-center">
+                <div class="offer-content">
+                    <span class="badge badge-gold">Limited Season Tasting</span>
+                    <h2>Autumn Chef's Tasting Menu</h2>
+                    <p>Enjoy a exclusive 5-course pairing meal featuring prime cuts, winter truffle risottos, and artisanal pastries tailored by Head Chef.</p>
+                    <a href="#reservation" class="btn btn-gold">Reserve Your Table</a>
+                </div>
+                <div class="offer-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800" alt="Plated seasonal tasting course dish" class="rounded-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section-padding" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Culinary Craft</span>
+                    <h2>Our Menu</h2>
+                </div>
+
+                <div class="menu-controls">
+                    <div class="category-filters" id="category-filters">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="starters">Starters</button>
+                        <button class="filter-btn" data-category="mains">Mains</button>
+                        <button class="filter-btn" data-category="desserts">Desserts</button>
+                        <button class="filter-btn" data-category="drinks">Drinks</button>
+                    </div>
+
+                    <div class="menu-utility-bar">
+                        <input type="text" id="menu-search" class="search-input" placeholder="Search dish name..." aria-label="Search dishes">
+                        <select id="menu-sort" class="sort-select" aria-label="Sort dishes by price">
+                            <option value="default">Default Order</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-3" id="menu-grid">
+                    <!-- Populated via JS -->
+                </div>
+                <div id="empty-menu-msg" class="empty-msg hidden">No dishes match your selected filter or search keyword.</div>
+            </div>
+        </section>
+
+        <!-- Dining Experience / Philosophy -->
+        <section class="experience section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">The SAVOR Promise</span>
+                    <h2>Elevated Dining Experience</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Fresh Organic Ingredients</h3>
+                        <p>We source all produce daily from certified local sustainable farms to deliver pristine taste and maximum nutritional integrity.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>Thoughtful Preparation</h3>
+                        <p>Each recipe balances flavor profile, texture, and visual presentation through time-tested techniques and creative flair.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3>Warm Atmosphere</h3>
+                        <p>Our attentive staff and carefully lit interiors create a welcoming atmosphere suitable for romance, family, and business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation section-padding" id="reservation">
+            <div class="container grid grid-2 items-center">
+                <div class="reservation-info">
+                    <span class="subheading">Table Booking</span>
+                    <h2>Reserve Your Dining Experience</h2>
+                    <p>Please reserve in advance for weekend dinner dining. For parties larger than 8 guests, please contact us directly by phone.</p>
+                    <div class="reservation-meta">
+                        <p><strong>Opening Hours:</strong> Mon - Sun: 5:00 PM – 11:00 PM</p>
+                        <p><strong>Dress Code:</strong> Smart Casual</p>
+                    </div>
+                </div>
+                <div class="reservation-card card">
+                    <form id="reservation-form" novalidate>
+                        <div class="form-group">
+                            <label for="res-name">Full Name *</label>
+                            <input type="text" id="res-name" class="form-input" required placeholder="Jane Doe">
+                            <span class="error-msg" id="err-res-name"></span>
+                        </div>
+                        <div class="form-group grid grid-2">
+                            <div>
+                                <label for="res-email">Email Address *</label>
+                                <input type="email" id="res-email" class="form-input" required placeholder="jane@example.com">
+                                <span class="error-msg" id="err-res-email"></span>
+                            </div>
+                            <div>
+                                <label for="res-phone">Phone Number *</label>
+                                <input type="tel" id="res-phone" class="form-input" required placeholder="+1 (555) 000-0000">
+                                <span class="error-msg" id="err-res-phone"></span>
+                            </div>
+                        </div>
+                        <div class="form-group grid grid-3">
+                            <div>
+                                <label for="res-date">Date *</label>
+                                <input type="date" id="res-date" class="form-input" required>
+                                <span class="error-msg" id="err-res-date"></span>
+                            </div>
+                            <div>
+                                <label for="res-time">Time *</label>
+                                <input type="time" id="res-time" class="form-input" required>
+                                <span class="error-msg" id="err-res-time"></span>
+                            </div>
+                            <div>
+                                <label for="res-guests">Guests *</label>
+                                <select id="res-guests" class="form-input" required>
+                                    <option value="1">1 Person</option>
+                                    <option value="2" selected>2 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="8">8 People</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-message">Special Requests (Optional)</label>
+                            <textarea id="res-message" class="form-input" rows="3" placeholder="Dietary requirements or special occasion..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Confirm Booking Request</button>
+                        <div class="form-alert hidden" id="reservation-alert"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Testimonials -->
+        <section class="testimonials section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Guest Impressions</span>
+                    <h2>Sample Testimonials</h2>
+                    <p class="demo-note">* Fictional sample reviews presented for portfolio demonstration.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="testimonial-card card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"The Ribeye Steak was aged to perfection, and the truffle butter elevated the flavor completely. Warm staff and beautiful lighting."</p>
+                        <div class="testimonial-author">
+                            <strong>Eleanor Vance</strong>
+                            <span>Food Critic & Guest</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"An absolute triumph of modern cuisine. The Chocolate Lava Cake alone is worth reserving a table weeks in advance."</p>
+                        <div class="testimonial-author">
+                            <strong>Marcus Sterling</strong>
+                            <span>Design Director</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"From the artisanal sourdough starter to the house lemonade, every detail shows incredible thought and love."</p>
+                        <div class="testimonial-author">
+                            <strong>Sophia Reyes</strong>
+                            <span>Local Resident</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section-padding" id="gallery">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Visual Journey</span>
+                    <h2>Restaurant & Culinary Gallery</h2>
+                </div>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding bg-light" id="contact">
+            <div class="container grid grid-2">
+                <div class="contact-info">
+                    <span class="subheading">Get in Touch</span>
+                    <h2>Location & Hours</h2>
+                    <p>We look forward to welcoming you to SAVOR.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <p>124 Gourmet Boulevard, Culinary District, CA 90210 (Fictional Address)</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Direct Contact:</strong>
+                            <p>Phone: +1 (555) 234-5678</p>
+                            <p>Email: reservations@savor-restaurant-demo.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Operating Hours:</strong>
+                            <p>Monday – Thursday: 5:00 PM – 10:00 PM</p>
+                            <p>Friday – Sunday: 4:30 PM – 11:30 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <span>Interactive Map Location Placeholder</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-card card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contact-name">Name *</label>
+                            <input type="text" id="contact-name" class="form-input" required placeholder="Your full name">
+                            <span class="error-msg" id="err-contact-name"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" class="form-input" required placeholder="your.email@example.com">
+                            <span class="error-msg" id="err-contact-email"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-msg">Message *</label>
+                            <textarea id="contact-msg" class="form-input" rows="4" required placeholder="How can we assist you?"></textarea>
+                            <span class="error-msg" id="err-contact-msg"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                        <div class="form-alert hidden" id="contact-alert"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="#hero" class="brand-logo footer-logo">SAVOR</a>
+                <p>A premium contemporary restaurant dedicated to fresh ingredients and memorable fine dining moments.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservations</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <p>Mon - Thu: 5pm - 10pm</p>
+                <p>Fri - Sun: 4:30pm - 11:30pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Follow our journey on social media (Placeholders):</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SAVOR Restaurant Concept. Built for Portfolio Demonstration.</p>
+        </div>
+    </footer>
+
+    <!-- Cart / Order Summary Drawer -->
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Order Summary Drawer">
+        <div class="cart-header">
+            <h3>Your Selected Order</h3>
+            <button class="cart-close-btn" id="cart-close-btn" aria-label="Close Order Panel">&times;</button>
+        </div>
+        <div class="cart-body" id="cart-items-container">
+            <!-- Dynamic Cart Items -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <strong id="cart-subtotal-price">$0.00</strong>
+            </div>
+            <p class="demo-cart-note">* Client-side interactive order demo. No payment processed.</p>
+            <div class="cart-actions">
+                <button class="btn btn-outline btn-sm" id="clear-cart-btn">Clear</button>
+                <button class="btn btn-primary btn-sm" id="checkout-demo-btn">Checkout Demo</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Accessible Image Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lightbox-overlay" id="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+            <img id="lightbox-img" src="" alt="Gallery Dish View">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
